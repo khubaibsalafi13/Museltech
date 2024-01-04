@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+:root{
+    --textcolor:rgb(48, 48, 48);
+    --hovercolor:rgb(255, 0, 102);
+    --navcolor:#fff;
+    --navbarcolor: #000;
+    --overlay: rgba(11, 11, 11, 0.601);
+}
+
+section{
+    overflow-x: hidden;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    display: inline-block;
+}
+body{
+    width: 100%;
+    height: 1100px;
+
+}
+
+.main_overlay{
+    position: relative;
+    z-index: 1;
+}
+
+.main_overlay:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 11, 11, 0.601);
+    
+}
+
+.transation{
+    transition: all linear .4s;
+}
+
+/* Common Css End */
+
+
+/* Menu Part Css Start */
+
+.navbar_logo{
+    color: white;
+    width: 100px;
+    height: 60px ;
+    text-align: center;
+    line-height: 50px;
+    transform: skew(-20deg);
+}
+
+
+.navbar_main{
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(5px); 
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+}
+.navbar_main ul li a{
+    color: white;
+    margin-left: 30px;
+    position: relative;
+   
+}
+.navbar_main ul li a:hover{
+    color: white;
+  
+}
+
+.navbar_main ul li a:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0%;
+    height: 5px;
+    background-color:#ff0066;
+    transition: all linear .4s;
+   
+}
+.navbar_main ul li a:hover:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 5px;
+    background-color:#ff0066;
+
+}
+
+
+
+/* Hero Part Css Start */
+
+#hero{
+    position: relative;
+    top: -100px;
+    left: 0;
+    overflow-x: hidden;
+}
+
+
+
+
+.hero_bg{
+   padding: 160px 0px; 
+}
+
+.slick-dots{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slick-dots li button{
+    width: 20px;
+    height:2
+    0px;
+    background-color: transparent;
+    border: 1px solid greenyellow;
+}
+
+.hero_text h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+}
+.hero_text h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 90px;
+}
+.hero_text p{
+    color: #fff;
+    margin: 30px 0px;
+}
+
+
+.btn{
+    padding: 10px 15px;
+    color: white;
+    margin: 0px 20px;
+}
+
+.join_now{
+    background-color: #ff0066;
+}
+.view_more{
+    background-color: #ffffff;
+    color: black;
+}
+/* Hero Part Css End */
+/* Work Part Css Start */
+
+#work{
+   padding: 50px 0px;
+    background-color:rgb(249, 249, 249) ;
+    position: relative;
+    top: -145px;
+    overflow-x: hidden;
+}
+
+.work_slide .slick-slide{
+    padding: 0px 16px;
+}
+
+.common_heading h2{
+    color: black;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 45px;
+}
+
+.common_heading p{
+
+    color: black;
+    
+}
+
+.common_heading h2:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 5px;
+    background-color: #ff0066;
+
+
+}
+
+
+.work_main{
+    width: 400px;
+    height: auto;
+    background-color: #ffffff;
+    border: 1px solid rgb(113, 113, 113,.1);
+    box-shadow: 0px 0px 10px 5px rgba(234, 234, 234, 0.5);
+    border-radius: 3px;
+}
+
+
+
+.work_text{
+    padding: 30px 30px 35px 30px;
+}
+.work_text h3{
+    color: #000;
+    font-size: 32px;
+}
+.doller{
+    color: #ff0066;
+    font-size: 60px;
+    margin: 0;
+}
+
+.work_icon i{
+    color: #ff0066;
+    margin-bottom: 15px;
+}
+
+.sub-text{
+    color: #000;
+}
+.work_img{
+    position: relative;
+}
+
+.work_img img{
+    border-top-left-radius:3px ;
+    border-top-right-radius:3px ;
+}
+
+.cart{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 25px;
+    background-color: #ff0066;
+    text-align: center;
+    border-radius: 5px;
+}
+.cart:hover{
+
+    color: #ffffff;
+    background-color: #ff3083;
+
+ 
+}
+
+
+
+.img_animation{
+    width: 100%;
+    height: 0%;
+    background-color:rgb(255, 0, 102,.4) ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all linear .5s;
+}
+
+.work_main:hover .img_animation {
+    height: 100%;
+   
+
+}
+
+
+
+
+
+/* Work Part Css End */
+/* Testimonial Part Css Start */
+
+
+
+#testimonial{
+   
+     padding: 50px 0px;
+     background-color:#ffff ;
+     position: relative;
+     top: -145px;
+     overflow-x: hidden;
+ 
+}
+
+
+
+
+.testimonial_bg{
+padding: 80px 0px;
+margin-top: 40px;
+}
+
+.testimonial_gal{
+    margin-bottom:20px;
+    position: relative;
+   
+}
+
+
+.testimonial_gal img{
+    border:  5px solid #ffffff;
+ 
+}
+
+.testimonial_animation{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(255, 0, 102,.5);
+
+    transition: all linear .3s;
+}
+
+.testimonial_gal:hover .testimonial_animation{
+    width: 100%;
+}
+/* Testimonial Part Css End */
+
+
+/* Review Part Css Start*/
+#review{
+    padding: 50px 0px ;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 0;
+    top: -185px;
+    overflow-x: hidden;
+}
+
+.review_bg{
+    padding: 80px 0px;
+    margin-top: 40px;
+    position: relative;
+}
+
+
+.review_icon i{
+    color: gold;
+}
+
+.review_text{
+   
+}
+
+.review_bg:after{
+    background-color: rgba(7, 7, 7, 0.9);
+}
+.review_slide .slick-slide{
+    padding: 0px 15px;
+}
+
+.review_slide .slick-dots{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 48%;
+    transform: translateX(-50%);
+    bottom: -60px;
+  
+ 
+    
+}
+.review_slide .slick-dots li button{
+
+
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    border-radius: 50%;
+    margin: 0px 5px;
+    border: 1px solid white;
+    
+}
+
+.review_slide .slick-dots li.slick-active button{
+    background-color: #ff0066;  
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ff0066;
+}
+
+/* Review Part Css End */
+/* Footer Part Css Start*/
+
+#footer{
+    padding: 50px 0px 70px;
+    background-color: #000000;
+    position: relative;
+    top: -240px;
+}
+
+
+.footer_social{
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 43%;
+    margin-bottom: 30px;
+}
+.footer_service{
+    position: relative;
+    left: 33%;
+    top: 15%;
+
+}
+.footer_service a{
+    color: rgb(157, 0, 0);
+}
+
+.footer_social a{
+    width: 30px;
+    height: 30px;
+    background-color: #f1f1f1;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+    margin: 0px 5px;
+    transition: all linear .2s;
+    
+
+}
+.footer_social a:hover{
+transform: scale(1.3);
+
+}
+
+.footer_social i{
+    color: #ffffff;
+}
+.footer_social a:nth-child(1){
+    background-color: rgb(29, 142, 255);
+}
+
+.footer_social a:nth-child(2){
+    background-color: rgba(29, 210, 255, 0.805);
+}
+.footer_social a:nth-child(3){
+    background-color: rgba(247, 0, 0, 0.805);
+}
+.footer_social a:nth-child(4){
+    background-color: rgba(255, 0, 191, 0.805);
+}
+
+.footer_service a{
+    color: white;
+    text-decoration: none;
+    margin: 0px 4px;
+    text-align: center;
+    
+}
+
+.footer_copyright p{
+    margin-top: 10px;
+    font-weight: 100;
+}
+/* Footer Part Css End */
+
+
+
+/* Media Query */
+@media (max-width: 600px) {
+    .hero_text h1{
+        font-size: 40px;
+
+    }
+
+    .hero_text h3 {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    .hero_text p {
+        color: #fff;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .join_now {
+        background-color: #ff0066;
+        display: block;
+        margin-bottom: 20px;
+        color: white;
+    }
+    .view_more {
+        color: #212529;
+        display: block;
+    }
+
+    .hero_bg{
+        padding: 120px 0px 70px; 
+     }
+
+  }
